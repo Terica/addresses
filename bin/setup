@@ -1,7 +1,9 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
-set -vx
+#!/usr/bin/env bash  # shebang allow run scripts at command line
+set -euo pipefail    # set -o pipefail causes a pipeline to produce a failure return code if any command errors. -e i exit on command fail/error; -u exit on unset var error
+IFS=$'\n\t'          # IFS set to the default value. This works with zsh, ksh, bash.
+set -vx              # -v  The shell shall write its input to standard error as it is read; 
+                     # -x The  shell shall write to standard error a trace for each command after it expands the command and
+                     # before it executes it. It is unspecified whether the command that turns tracing off is traced.
 
 bundle install
 
