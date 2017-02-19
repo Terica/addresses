@@ -1,4 +1,4 @@
-require "spec_helper"  # functions for tasks required to work 
+require "spec_helper"  # functions for tasks required. 
 
 describe Addresses do
   it "has a version number" do
